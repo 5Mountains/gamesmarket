@@ -1,17 +1,9 @@
 import React from 'react';
-import {SafeAreaView, ScrollView, StatusBar, Text, View} from 'react-native';
 
-const App = () => {
-  return (
-    <SafeAreaView>
-      <StatusBar hidden />
-      <ScrollView>
-        <View>
-          <Text>App</Text>
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
+import {Navigation} from './src/navigation';
+
+const App = (): JSX.Element => {
+  return <Navigation />;
 };
 
 export default App;
