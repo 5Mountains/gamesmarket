@@ -12,8 +12,14 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		3FBB44C0EA52484B871A3BC4 /* RobotoMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C743E1403B4B401AB4FE67B0 /* RobotoMono-Bold.ttf */; };
+		512C56FA957C4E17932E6054 /* RobotoMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC528463C83A45DEB2F461FD /* RobotoMono-Medium.ttf */; };
+		62E28E9188C1474CA81D4BB9 /* RobotoMono-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 442034D62CDD45A69AA4448A /* RobotoMono-MediumItalic.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-GamesMarket-GamesMarketTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-GamesMarket-GamesMarketTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		A8940BC135754F5EA8B5E56A /* RobotoMono-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18048ACFE2614776A747F386 /* RobotoMono-Italic.ttf */; };
+		BD76E71CDECA433483A46514 /* RobotoMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD942DCF4834478594C0BA73 /* RobotoMono-Regular.ttf */; };
+		E8D0A1BC763244ADA9140AC7 /* RobotoMono-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 322408810BE6481FB94226A1 /* RobotoMono-BoldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +42,19 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = GamesMarket/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GamesMarket/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = GamesMarket/main.m; sourceTree = "<group>"; };
+		18048ACFE2614776A747F386 /* RobotoMono-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "RobotoMono-Italic.ttf"; path = "../src/assets/fonts/RobotoMono-Italic.ttf"; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-GamesMarket-GamesMarketTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GamesMarket-GamesMarketTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		322408810BE6481FB94226A1 /* RobotoMono-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "RobotoMono-BoldItalic.ttf"; path = "../src/assets/fonts/RobotoMono-BoldItalic.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-GamesMarket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GamesMarket.debug.xcconfig"; path = "Target Support Files/Pods-GamesMarket/Pods-GamesMarket.debug.xcconfig"; sourceTree = "<group>"; };
+		442034D62CDD45A69AA4448A /* RobotoMono-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "RobotoMono-MediumItalic.ttf"; path = "../src/assets/fonts/RobotoMono-MediumItalic.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-GamesMarket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GamesMarket.release.xcconfig"; path = "Target Support Files/Pods-GamesMarket/Pods-GamesMarket.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-GamesMarket-GamesMarketTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GamesMarket-GamesMarketTests.debug.xcconfig"; path = "Target Support Files/Pods-GamesMarket-GamesMarketTests/Pods-GamesMarket-GamesMarketTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-GamesMarket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GamesMarket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = GamesMarket/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-GamesMarket-GamesMarketTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GamesMarket-GamesMarketTests.release.xcconfig"; path = "Target Support Files/Pods-GamesMarket-GamesMarketTests/Pods-GamesMarket-GamesMarketTests.release.xcconfig"; sourceTree = "<group>"; };
+		BD942DCF4834478594C0BA73 /* RobotoMono-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "RobotoMono-Regular.ttf"; path = "../src/assets/fonts/RobotoMono-Regular.ttf"; sourceTree = "<group>"; };
+		C743E1403B4B401AB4FE67B0 /* RobotoMono-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "RobotoMono-Bold.ttf"; path = "../src/assets/fonts/RobotoMono-Bold.ttf"; sourceTree = "<group>"; };
+		CC528463C83A45DEB2F461FD /* RobotoMono-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "RobotoMono-Medium.ttf"; path = "../src/assets/fonts/RobotoMono-Medium.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -106,6 +118,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		58226A7B1AA84F729657A8A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C743E1403B4B401AB4FE67B0 /* RobotoMono-Bold.ttf */,
+				322408810BE6481FB94226A1 /* RobotoMono-BoldItalic.ttf */,
+				18048ACFE2614776A747F386 /* RobotoMono-Italic.ttf */,
+				CC528463C83A45DEB2F461FD /* RobotoMono-Medium.ttf */,
+				442034D62CDD45A69AA4448A /* RobotoMono-MediumItalic.ttf */,
+				BD942DCF4834478594C0BA73 /* RobotoMono-Regular.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +148,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				58226A7B1AA84F729657A8A3 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -244,6 +271,12 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				3FBB44C0EA52484B871A3BC4 /* RobotoMono-Bold.ttf in Resources */,
+				E8D0A1BC763244ADA9140AC7 /* RobotoMono-BoldItalic.ttf in Resources */,
+				A8940BC135754F5EA8B5E56A /* RobotoMono-Italic.ttf in Resources */,
+				512C56FA957C4E17932E6054 /* RobotoMono-Medium.ttf in Resources */,
+				62E28E9188C1474CA81D4BB9 /* RobotoMono-MediumItalic.ttf in Resources */,
+				BD76E71CDECA433483A46514 /* RobotoMono-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
