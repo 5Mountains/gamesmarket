@@ -22,7 +22,7 @@ export const OnboardingScreen = () => {
       </View>
       <Pressable
         style={styles.buttonContainer}
-        onPress={() => navigation.navigate('HomeScreen')}>
+        onPress={() => navigation.navigate('Login')}>
         <Text style={styles.text}>Let's START</Text>
         <AntDesign name={'right'} color={'white'} size={22} />
       </Pressable>

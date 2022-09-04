@@ -1,20 +1,20 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
 import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import {HomeScreen} from '../screens/HomeScreen';
-import {OnboardingScreen} from '../screens/OnboardingScreen/';
-
-const Stack = createNativeStackNavigator();
+import {AuthStack} from './AuthStack';
+import {MainStack} from './MainStack';
 
 export const Navigation = (): JSX.Element => {
+  const [isAuth, setIsAuth] = useState(false);
+
+  useEffect(() => {
+    setIsAuth(true);
+  }, []);
+
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown: false}}>
-        <Stack.Screen name="OnboardingScreen" component={OnboardingScreen} />
-        <Stack.Screen name="HomeScreen" component={HomeScreen} />
-      </Stack.Navigator>
+      {isAuth ? <MainStack /> : <AuthStack />}
     </NavigationContainer>
   );
 };
