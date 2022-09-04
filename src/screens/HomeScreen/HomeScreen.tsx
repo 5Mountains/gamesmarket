@@ -1,3 +1,4 @@
+import {useNavigation} from '@react-navigation/native';
 import React, {useState} from 'react';
 import {
   View,
@@ -19,7 +20,8 @@ import {windowWidth} from '../../utils/Dimensions';
 import {styles} from './styles';
 
 export const HomeScreen = () => {
-  const [gamesTab, setGamesTab] = useState(1);
+  const [gamesTab, setGamesTab] = useState<number>(1);
+  const navigation = useNavigation<any>();
 
   const onSelectSwitch = (value: number) => {
     setGamesTab(value);
@@ -38,7 +40,7 @@ export const HomeScreen = () => {
           <Text style={{fontSize: 18, fontFamily: 'RobotoMono-Medium'}}>
             Hello USer
           </Text>
-          <Pressable>
+          <Pressable onPress={() => navigation.openDrawer()}>
             <ImageBackground
               source={require('../../assets/images/user-profile.jpg')}
               style={{width: 50, height: 50}}
