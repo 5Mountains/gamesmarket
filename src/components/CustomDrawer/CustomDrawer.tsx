@@ -1,4 +1,4 @@
-import {View, Text, ImageBackground, Image} from 'react-native';
+import {View, Text, ImageBackground, Image, Pressable} from 'react-native';
 import React from 'react';
 import {styles} from './styles';
 
@@ -15,41 +15,33 @@ export const CustomDrawer = (props: any) => {
     <View style={styles.rootContainer}>
       <DrawerContentScrollView
         {...props}
-        contentContainerStyle={{backgroundColor: '#8200d6'}}>
+        contentContainerStyle={styles.drawerContainer}>
         <ImageBackground
           source={require('../../assets/images/menu-bg.jpeg')}
-          style={{padding: 20}}>
+          style={styles.topBgImage}>
           <Image
             source={require('../../assets/images/user-profile.jpg')}
-            style={{width: 80, height: 80, borderRadius: 40, marginBottom: 10}}
+            style={styles.avatar}
           />
-          <Text
-            style={{
-              fontFamily: 'RobotoMono-Medium',
-              fontSize: 18,
-              color: '#ffffff',
-              marginBottom: 5,
-            }}>
-            John Doe
-          </Text>
-          <View style={{flexDirection: 'row'}}>
-            <Text
-              style={{
-                fontFamily: 'RobotoMono-Regular',
-                color: '#ffffff',
-                marginRight: 5,
-              }}>
-              280 coins
-            </Text>
+          <Text style={styles.topTitle}>John Doe</Text>
+          <View style={styles.topTextContainer}>
+            <Text style={styles.topText}>280 coins</Text>
             <FontAwesome5 name={'coins'} size={14} color={'#ffffff'} />
           </View>
         </ImageBackground>
-        <View style={{backgroundColor: '#ffffff', paddingTop: 10}}>
+        <View style={styles.itemList}>
           <DrawerItemList {...props} />
         </View>
       </DrawerContentScrollView>
-      <View>
-        <Text>Custom Drawer</Text>
+      <View style={styles.bottomContainer}>
+        <Pressable onPress={() => {}} style={styles.buttonStyle}>
+          <Ionicons name="share-social-outline" size={22} />
+          <Text style={styles.bottomText}>Tell Friends</Text>
+        </Pressable>
+        <Pressable onPress={() => {}} style={styles.buttonStyle}>
+          <Ionicons name="exit-outline" size={22} />
+          <Text style={styles.bottomText}>Sign out</Text>
+        </Pressable>
       </View>
     </View>
   );
