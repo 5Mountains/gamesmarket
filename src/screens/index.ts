@@ -1,5 +1,6 @@
 import {HomeScreen} from './HomeScreen';
 import {LoginScreen} from './LoginScreen';
+import {RegisterScreen} from './RegisterScreen';
 import {MessagesScreen} from './MessagesScreen';
 import {MomentsScreen} from './MomentsScreen';
 import {OnboardingScreen} from './OnboardingScreen';
@@ -20,4 +21,5 @@ export {
   CartScreen,
   FavoriteScreen,
   GameDetailsScreen,
+  RegisterScreen,
 };

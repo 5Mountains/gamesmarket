@@ -9,7 +9,7 @@ export const Navigation = (): JSX.Element => {
   const [isAuth, setIsAuth] = useState(false);
 
   useEffect(() => {
-    setIsAuth(true);
+    setIsAuth(false);
   }, []);
 
   return (
