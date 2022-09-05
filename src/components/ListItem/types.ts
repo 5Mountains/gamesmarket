@@ -7,4 +7,5 @@ export interface IListItemProps {
   isFree: string;
   price?: string;
   id: string;
+  onPress: () => void;
 }

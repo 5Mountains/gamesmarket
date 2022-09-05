@@ -5,6 +5,9 @@ import {MomentsScreen} from './MomentsScreen';
 import {OnboardingScreen} from './OnboardingScreen';
 import {ProfileScreen} from './ProfileScreen';
 import {SettingsScreen} from './SettingsScreen';
+import {CartScreen} from './CartScreen';
+import {FavoriteScreen} from './FavoriteScreen';
+import {GameDetailsScreen} from './GameDetailsScreen';
 
 export {
   HomeScreen,
@@ -14,4 +17,7 @@ export {
   OnboardingScreen,
   ProfileScreen,
   SettingsScreen,
+  CartScreen,
+  FavoriteScreen,
+  GameDetailsScreen,
 };

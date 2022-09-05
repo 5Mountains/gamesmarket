@@ -9,6 +9,7 @@ export const ListItem = ({
   subtitle,
   isFree,
   price,
+  onPress,
 }: IListItemProps) => {
   return (
     <View
@@ -50,7 +51,8 @@ export const ListItem = ({
           padding: 10,
           borderRadius: 10,
           marginLeft: 'auto',
-        }}>
+        }}
+        onPress={onPress}>
         <Text
           style={{
             fontSize: 14,
