@@ -12,8 +12,11 @@ import GoogleSvg from '../../assets/images/misc/google.svg';
 import FacebookSvg from '../../assets/images/misc/facebook.svg';
 import TwitterSvg from '../../assets/images/misc/twitter.svg';
 import {CustomButton} from '../../components/CustomButton';
+import {useAuthContext} from '../../context/AuthContextProvider';
 
 export const LoginScreen = ({navigation}: any) => {
+  const {login} = useAuthContext();
+
   return (
     <SafeAreaView style={styles.rootContainer}>
       <ScrollView
@@ -50,7 +53,7 @@ export const LoginScreen = ({navigation}: any) => {
           fieldButtonFunction={() => console.log('pressed')}
         />
 
-        <CustomButton label="Login" onPress={() => console.log('pressed')} />
+        <CustomButton label="Login" onPress={() => login()} />
 
         <Text style={{textAlign: 'center', color: '#666666', marginBottom: 30}}>
           Or, login with...

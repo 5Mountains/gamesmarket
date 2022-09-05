@@ -10,7 +10,6 @@ export const Toggle = ({
   const [selectedMode, setSelectedMode] = useState(selectionMode);
 
   const updateSwitchData = (value: any) => () => {
-    console.log(value);
     setSelectedMode(value);
     onSelectSwitch(value);
   };

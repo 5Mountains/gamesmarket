@@ -9,8 +9,10 @@ import {
   DrawerContentScrollView,
   DrawerItemList,
 } from '@react-navigation/drawer';
+import {useAuthContext} from '../../context/AuthContextProvider';
 
 export const CustomDrawer = (props: any) => {
+  const {logout} = useAuthContext();
   return (
     <View style={styles.rootContainer}>
       <DrawerContentScrollView
@@ -38,7 +40,7 @@ export const CustomDrawer = (props: any) => {
           <Ionicons name="share-social-outline" size={22} />
           <Text style={styles.bottomText}>Tell Friends</Text>
         </Pressable>
-        <Pressable onPress={() => {}} style={styles.buttonStyle}>
+        <Pressable onPress={() => logout()} style={styles.buttonStyle}>
           <Ionicons name="exit-outline" size={22} />
           <Text style={styles.bottomText}>Sign out</Text>
         </Pressable>

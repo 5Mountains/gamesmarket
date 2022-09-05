@@ -1,20 +1,26 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 
 import {NavigationContainer} from '@react-navigation/native';
 
 import {AuthStack} from './AuthStack';
 import {MainStack} from './MainStack';
+import {useAuthContext} from '../context/AuthContextProvider';
+import {ActivityIndicator, View} from 'react-native';
 
 export const Navigation = (): JSX.Element => {
-  const [isAuth, setIsAuth] = useState(false);
+  const {isLoading, userToken} = useAuthContext();
 
-  useEffect(() => {
-    setIsAuth(false);
-  }, []);
+  if (isLoading) {
+    return (
+      <View style={{flex: 1, justifyContent: 'center'}}>
+        <ActivityIndicator size={'large'} />
+      </View>
+    );
+  }
 
   return (
     <NavigationContainer>
-      {isAuth ? <MainStack /> : <AuthStack />}
+      {userToken ? <MainStack /> : <AuthStack />}
     </NavigationContainer>
   );
 };
