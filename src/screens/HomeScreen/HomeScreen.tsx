@@ -1,4 +1,3 @@
-import {useNavigation} from '@react-navigation/native';
 import React, {useState} from 'react';
 import {
   View,
@@ -9,6 +8,7 @@ import {
   TextInput,
   Pressable,
 } from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 
 import Feather from 'react-native-vector-icons/Feather';
 import {Carousel} from '../../components/Carousel';
@@ -104,9 +104,31 @@ export const HomeScreen = () => {
 
         <View>
           {gamesTab === 1 &&
-            freeGames.map(item => <ListItem key={item.id} {...item} />)}
+            freeGames.map(item => (
+              <ListItem
+                key={item.id}
+                {...item}
+                onPress={() =>
+                  navigation.navigate('GameDetails', {
+                    title: item.title,
+                    id: item.id,
+                  })
+                }
+              />
+            ))}
           {gamesTab === 2 &&
-            paidGames.map(item => <ListItem key={item.id} {...item} />)}
+            paidGames.map(item => (
+              <ListItem
+                key={item.id}
+                {...item}
+                onPress={() =>
+                  navigation.navigate('GameDetails', {
+                    title: item.title,
+                    id: item.id,
+                  })
+                }
+              />
+            ))}
         </View>
       </ScrollView>
     </SafeAreaView>
