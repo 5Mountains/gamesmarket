@@ -5,7 +5,9 @@ import EncryptedStorage from 'react-native-encrypted-storage';
 export const AuthContext = createContext<any>(undefined);
 
 export const AuthContextProvider = ({children}: any) => {
-  const [isLoading, setIsLoading] = useState<boolean>(false);
+  // const [authData, setAuthData] = useState<AuthData>();
+
+  const [isLoading, setIsLoading] = useState<boolean>(true);
   const [userToken, setUserToken] = useState<string | null>(null);
 
   const login = async () => {
@@ -13,43 +15,36 @@ export const AuthContextProvider = ({children}: any) => {
       setIsLoading(true);
 
       EncryptedStorage.setItem('userToken', 'randomUserToken');
-
-      setIsLoading(false);
     } catch (e) {
       setUserToken(null);
-      setIsLoading(false);
 
       Alert.alert((e as Error).message);
+    } finally {
+      setIsLoading(false);
     }
   };
 
   const logout = () => {
     try {
-      setIsLoading(true);
-
       setUserToken(null);
       EncryptedStorage.removeItem('userToken');
-
-      setIsLoading(false);
     } catch (e) {
-      setIsLoading(false);
-
       Alert.alert((e as Error).message);
+    } finally {
+      setIsLoading(false);
     }
   };
 
-  const isLoggedIn = async () => {
+  const isLoggedIn = async (): Promise<void> => {
     try {
-      setIsLoading(true);
-
       const existUserToken = await EncryptedStorage.getItem('userToken');
-      setUserToken(existUserToken);
-
-      setIsLoading(false);
+      if (existUserToken) {
+        setUserToken(existUserToken);
+      }
     } catch (e) {
-      setIsLoading(false);
-
       Alert.alert((e as Error).message);
+    } finally {
+      setIsLoading(false);
     }
   };
 
